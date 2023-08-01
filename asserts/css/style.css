@@ -1,0 +1,30 @@
+:root {
+    --brown-color: #140200;
+    --brown-transparent-color: rgba(20, 2, 0, 0.8);
+    --gold-color: #b68834;
+    --text-light-color: #777777;
+    --text-dark-color: #222222;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: var(--text-light-color);
+}
+
+/*header*/
+.header {
+    background-color: var(--brown-transparent-color);
+}
+.header .nav .nav-item .nav-link {
+    color: #FFFFFF;
+    font-size: 13px;
+}
+
+
+
+
+
+/*main*/
+
+/*footer*/
