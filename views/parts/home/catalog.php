@@ -2,8 +2,8 @@
     <div class="container">
         <div class="row title-row">
             <div class="col-12">
-                <h1>What kind of Coffee we serve for you</h1>
-                <p>Who are in extremely love with eco friendly system.</p>
+                <h1><?= $content['catalog']['title'] ?? '' ?></h1>
+                <p><?= $content['catalog']['description'] ?? '' ?></p>
             </div>
         </div>
         <div class="row">
