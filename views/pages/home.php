@@ -2,8 +2,11 @@
 
 require PARTS_DIR . 'header.php';
 
+$content = getContent('name IN ("banner", "about", "catalog", "gallery")');
+extract($content);
+
 require PARTS_DIR . 'home/banner.php';
-require PARTS_DIR . 'home/about-us.php';
+require PARTS_DIR . 'home/about.php';
 require PARTS_DIR . 'home/catalog.php';
 require PARTS_DIR . 'home/gallery.php';
 require PARTS_DIR . 'home/reviews.php';
