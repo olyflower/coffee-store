@@ -15,7 +15,7 @@ body {
 }
 
 /*------header------*/
-#header {
+#navigation {
     background-color: var(--brown-transparent-color);
 }
 
@@ -26,6 +26,15 @@ body {
 
 .nav-link:hover {
     color: var(--gold-color);
+}
+.dropdown-toggle:hover {
+    color: var(--white-color);
+}
+.dropdown-toggle:focus {
+    color: var(--white-color);
+}
+.dropdown-item {
+    color: var(--black-color);
 }
 
 /*------main------*/
