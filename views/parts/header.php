@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Coffee store</title>
+    <title>Coffee shop</title>
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="<?= ASSETS_URI ?>/libs/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="<?= ASSETS_URI ?>/css/style.css">
 </head>
 <body>
+<?php include_once PARTS_DIR . 'notification.php' ?>
 <section id="navigation" class="fixed-top">
     <div class="container">
         <div class="row">
@@ -34,6 +35,33 @@
                                        aria-current="page"><?= $link['title'] ?></a>
                                 </li>
                             <?php endforeach; ?>
+
+                            <?php if (!isAuth()): ?>
+                                <li class="nav-item">
+                                    <a href="/login" class="nav-link" aria-current="page">Sign In</a>
+                                </li>
+                                <li class="nav-item">
+                                    <span class="nav-link disabled">|</span>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/registration" class="nav-link" aria-current="page">Sign Up</a>
+                                </li>
+                            <?php else: ?>
+                                <li class="nav-item">
+                                    <span class="nav-link disabled">|</span>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">User Actions</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="/account">Account</a></li>
+                                        <?php if (isAdmin()): ?>
+                                            <li><a href="/admin/dashboard" class="dropdown-item">Admin panel</a></li>
+                                        <?php endif; ?>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item" href="/logout">Log Out</a></li>
+                                    </ul>
+                                </li>
+                            <?php endif; ?>
                         </ul>
                     <?php endif; ?>
                 </header>
