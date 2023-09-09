@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Coffee store</title>
     <link rel="stylesheet" href="<?= ASSETS_URI ?>/libs/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
           integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
@@ -35,7 +35,7 @@
                     </div>
                     <!--                    <a href="/admin/content" class="nav-link">Content</a>-->
                     <a href="#" style="color: white" class="nav-link disabled">|</a>
-                    <a href="/logout" style="color: white" class="nav-link">Back to Site</a>
+                    <a href="/" style="color: white" class="nav-link">Back to Site</a>
                     <a href="/logout" style="color: white" class="nav-link">Log Out</a>
                 </nav>
             </div>
