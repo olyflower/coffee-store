@@ -331,3 +331,32 @@ body {
     width: 40px;
     background-color: var(--gold-color);
 }
+
+/*create-product*/
+
+.form-check-input:checked {
+    background-color: var(--brown-transparent-color);
+    border-color: var(--brown-color);
+}
+
+.button-create {
+    background-color: #91716ecc;
+}
+
+.button-create:hover {
+    background-color: #91716ecc;
+    color: var(--black-color);
+}
+
+.container-create {
+    padding: 10rem 0;
+}
+
+/*notification*/
+
+.notification {
+    position: absolute;
+    top: 7%;
+    right: 1%;
+    padding: 0.5rem 1rem;
+}
