@@ -35,7 +35,10 @@
                                        aria-current="page"><?= $link['title'] ?></a>
                                 </li>
                             <?php endforeach; ?>
-
+                            <li class="nav-item">
+                                <a href="/cart" class="nav-link"
+                                   aria-current="page"><i class="fa-solid fa-cart-shopping"></i></a>
+                            </li>
                             <?php if (!isAuth()): ?>
                                 <li class="nav-item">
                                     <a href="/login" class="nav-link" aria-current="page">Sign In</a>

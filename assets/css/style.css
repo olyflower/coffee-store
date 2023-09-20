@@ -19,6 +19,14 @@ body {
     background-color: var(--brown-transparent-color);
 }
 
+.nav {
+    --bs-nav-link-color: unset;
+    --bs-nav-link-hover-color: unset;
+}
+
+.nav-pills {
+    --bs-nav-pills-link-active-bg: unset;
+}
 .nav-link {
     color: var(--white-color);
     font-size: 14px;
@@ -341,6 +349,8 @@ body {
 
 .button-create {
     background-color: #91716ecc;
+    border-radius: 20px;
+    width: 130px;
 }
 
 .button-create:hover {
@@ -359,4 +369,10 @@ body {
     top: 7%;
     right: 1%;
     padding: 0.5rem 1rem;
+}
+
+/*cart*/
+.cart-message {
+    margin-top: 200px;
+    margin-bottom: 100px;
 }
