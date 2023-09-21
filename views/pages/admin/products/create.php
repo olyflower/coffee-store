@@ -49,7 +49,7 @@ extract(formSessionData(SESSION_KEYS::CREATE_PRODUCT))
                             </div>
                             <?= formError($errors['price'] ?? null) ?>
 
-                            <button type="submit" class="btn btn-primary button-create">Create</button>
+                            <button type="submit" class="btn button-create">Create</button>
                         </form>
                     </div>
                 </div>
