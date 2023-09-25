@@ -33,7 +33,7 @@
                             <li><a class="dropdown-item" href="/admin/products/create">Create Product</a></li>
                         </ul>
                     </div>
-                    <!--                    <a href="/admin/content" class="nav-link">Content</a>-->
+                    <a href="/admin/content" class="nav-link">Content</a>
                     <a href="#" style="color: white" class="nav-link disabled">|</a>
                     <a href="/" style="color: white" class="nav-link">Back to Site</a>
                     <a href="/logout" style="color: white" class="nav-link">Log Out</a>
