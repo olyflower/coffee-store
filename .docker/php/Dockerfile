@@ -6,6 +6,8 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y git
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
+RUN echo "upload_max_filesize=64M" >> /usr/local/etc/php/conf.d/uploads.ini
+
 RUN /usr/sbin/a2enmod rewrite
 
 COPY app.conf /etc/apache2/sites-available/000-default.conf

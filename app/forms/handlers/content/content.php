@@ -18,6 +18,7 @@ function editContent()
         'navigation' => updateNavigationBlock($id, $fields),
         'banner' => updateBannerBlock($id, $fields),
         'catalog' => updateCatalogBlock($id, $fields),
+        'gallery' => updateGalleryBlock($id, $fields),
         default => redirectBack()
     };
 }

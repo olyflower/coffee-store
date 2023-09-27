@@ -18,7 +18,7 @@ $fields = json_decode($block['content'], true);
                             <?php if (!empty($fields['logo'])): ?>
                                 <div class="mb-3">
                                     <p>Current logo: </p>
-                                    <img src="<?= IMAGES_URI . "/$fields[logo]" ?>" width="30" alt="logo"/>
+                                    <img src="<?= IMAGES_URI . "/$fields[logo]" ?>" width="75" alt="logo"/>
                                 </div>
                             <?php endif; ?>
 

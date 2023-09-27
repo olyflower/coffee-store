@@ -7,7 +7,7 @@ const editSelectors = {
     }
 }
 
-$(document).on('click', editSelectors.nav.addAction, function(e) {
+$(document).on('click', editSelectors.nav.addAction, function (e) {
     e.preventDefault();
 
     let key = parseInt($(editSelectors.nav.wrapper).data('last_key'))
@@ -37,7 +37,7 @@ $(document).on('click', editSelectors.nav.addAction, function(e) {
     $(editSelectors.nav.wrapper).append(template).data('last_key', key)
 })
 
-$(document).on('click', editSelectors.nav.removeAction, function(e) {
+$(document).on('click', editSelectors.nav.removeAction, function (e) {
     e.preventDefault()
     $(this).parents(editSelectors.nav.item).remove()
 })
