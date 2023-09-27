@@ -44,12 +44,12 @@ function isAdmin(): bool
     return isAuth() ? $_SESSION['user']['isAdmin'] : false;
 }
 
-function userId(): bool
+function userId(): int
 {
     return $_SESSION['user']['id'];
 }
 
-function notify(string $text, string $class = 'success')
+function notify(string $text, string $class = 'success'): void
 {
     $_SESSION['notify'] = compact('text', 'class');
 }

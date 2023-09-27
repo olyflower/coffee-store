@@ -23,7 +23,7 @@
                     <?php if ($commonBlocks['navigation']['logo']): ?>
                         <a href="/"
                            class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-                            <img src="<?= IMAGES_URI ?>/<?= $commonBlocks['navigation']['logo'] ?>" alt="Logo">
+                            <img src="<?= IMAGES_URI ?>/<?= $commonBlocks['navigation']['logo'] ?>" width="75" alt="Logo">
                         </a>
                     <?php endif; ?>
 
