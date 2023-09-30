@@ -10,7 +10,8 @@ match(getRequestType()) {
     'edit_product' => editProduct(editProductParams()),
     'add_to_cart' => addToCart(addToCartParams()),
     'update_user_info' => updateUserInfo(updateUserInfoParams()),
-//    'update_user_password' => updateUserPassword(updateUserPasswordParams()),
     'edit_content' => editContent(),
+    'new_subscriber' => addSubscriber(filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL)),
+    'send_mail' => sendMail(sendMailParams()),
     default => redirectBack()
 };

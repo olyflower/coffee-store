@@ -1,4 +1,3 @@
-<?php //dd($content['about']) ?>
 <section id="about">
     <div class="container">
         <div class="row justify-content-start align-items-center">

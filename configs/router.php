@@ -25,6 +25,15 @@ switch (getUrl()) {
         require PAGE_DIR . '/cart.php';
         break;
 
+    case 'unsubscribe':
+        if (empty($_GET['hash'])) {
+            notify('Wrong action', 'danger');
+            redirect();
+        }
+        unsubscribe();
+        redirect();
+        break;
+
     case 'admin/dashboard':
         conditionRedirect(!isAdmin());
         require ADMIN_PAGE_DIR . '/dashboard.php';
@@ -72,6 +81,11 @@ switch (getUrl()) {
             redirectBack();
         }
         require $file;
+        break;
+
+    case 'admin/newsletter':
+        conditionRedirect(!isAdmin());
+        require ADMIN_PAGE_DIR . '/newsletter.php';
         break;
 
     case 'account':
